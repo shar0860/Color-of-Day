@@ -1,0 +1,87 @@
+body {
+    background-color: #f0f2f5;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    padding-top: 40px;
+}
+h1 {
+    color: #333;
+    text-align: center;
+    font-weight: 600;
+}
+
+#colorForm .form-control {
+    width: 250px;
+}
+
+#colorForm .btn {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#colorForm .btn:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.4);
+}
+
+#colorHistory {
+    margin-top: 40px;
+    border: none;
+    border-radius: 8px;
+}
+
+#colorHistory .card-header {
+    background-color: #343a40;
+    color: white;
+}
+
+#historyList {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#historyList li {
+    padding: 10px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+#clearHistory {
+    width: 100%;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#clearHistory:hover {
+    background-color: #c82333;
+    box-shadow: 0 4px 10px rgba(220, 53, 69, 0.4);
+}
+
+#colorDisplay {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 2px solid #dee2e6;
+    border-radius: 8px;
+    color: #333;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#colorDisplay:hover {
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    #colorForm .form-control {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #colorForm .btn {
+        width: 100%;
+    }
+}

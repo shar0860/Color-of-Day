@@ -4,25 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color of the Day</title>
-    <style>
-        /* Add any CSS styles here */
-    </style>
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Color of the Day</h1>
-    <form id="colorForm">
-        <label for="dateInput">Enter Date:</label>
-        <input type="date" id="dateInput">
-        <button type="submit">Search</button>
-    </form>
+    <div class="container mt-5">
+        <h1 class="mb-4">Color of the Day</h1>
+        
+        <form id="colorForm" class="form-inline justify-content-center">
+            <div class="form-group mb-2">
+                <label for="dateInput" class="sr-only">Enter Date:</label>
+                <input type="date" class="form-control form-control-lg" id="dateInput" placeholder="Enter Date">
+            </div>
+            <button type="submit" class="btn btn-lg btn-primary mb-2 ml-2">Search</button>
+        </form>
 
-    <div id="colorHistory">
-        <h2>Search History</h2>
-        <ul id="historyList"></ul>
-        <button id="clearHistory">Clear History</button>
+        <div id="colorHistory" class="card shadow-sm">
+            <div class="card-header bg-primary text-white">
+                <h2 class="h5">Search History</h2>
+            </div>
+            <div class="card-body">
+                <ul id="historyList" class="list-group"></ul>
+                <button id="clearHistory" class="btn btn-danger mt-3">Clear History</button>
+            </div>
+        </div>
+
+       
+        <div id="colorDisplay" class="mt-4 p-4 border rounded-lg text-center bg-light text-dark shadow-sm">
+         
+        </div>
     </div>
-
-    <div id="colorDisplay"></div>
 
     <script src="script.js"></script>
 </body>
